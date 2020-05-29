@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="cointainer">
+        <header>
+            <div class="logo">
+                <h1> MYHELPER <span>NG</span> </h1>
+            </div>
+            <div class="bars">
+                <span><i class="fa fa-bars"></i></span>
+            </div>
+            <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="dashboard.html"><h3>Home</h3></a>
+                        </li>
+                        <li>
+                            <a href="About.html"><h3>About</h3></a>
+                        </li>
+                        <li>
+                            <a href="Contact.html"><h3>Contact</h3></a>
+                        </li>
+                        <li class="active">
+                            <h3><span><i class="fas fa-sign-out-alt"></i></span> Logout</h3>
+                        </li>
+                    </ul>
+
+            </div>
+
+        </header>
+
+        <div class="nav-mobile">
+            <ul>
+                <li>
+                    <span><i class="fas fa-house-user"></i></span>
+                    <h3>Home</h3>
+                </li>
+                <li>
+                    <span><i class="fas fa-address-card"></i></span>
+                    <h3>About</h3>
+                </li>
+                <li>
+                    <span><i class="fas fa-phone-square-alt"></i></span>
+                    <h3>Contact</h3>
+                </li>
+                
+                <li class="active">
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    <h3>Logout</h3>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="m-bar">
+            <span><i class="fa fa-ellipsis-v"></i></span>
+        </div>
+
+        <aside class="sidebar">
+            <h1>sidebar <span class="close"><i class="fa fa-times"></i></span> </h1>
+            <div class="user-side">
+                <div class="user-pic">
+                    <img  src="Headshots_women75.jpg" alt="">
+                </div>
+                <div class="user-info">
+                    <div class="name">Sandra Smith</div>
+                    <div class="email">ss3443@gmail.com</div>
+                    <div class="number">+23480*****215</div>
+                    <div class="status">Online</div>
+                </div>
+            </div>
+            <div class="search">
+                <form action="">
+                    <div class="row">
+                        <input type="text" name="" id="" placeholder="search profile...">
+                        <button type="submit"><span><i class="fa fa-search"></i></span> </button>
+                    </div>
+                </form>
+            </div>
+            <div class="side-nav">
+                <h2>General</h2>
+                <nav>
+                    <ul>
+                        <li class="active" onclick="show(0)">
+                            <span><i class="fa fa-tachometer-alt"></i></span>
+                            <h3>Dashboard</h3>
+                        </li>
+                        
+                        <li  onclick="show(1)">
+                            <span><i class="fa fa-star"></i></span>
+                            <h3>Reviews</h3>
+                        </li>
+                        
+                        <li  onclick="show(2)">
+                            <span><i class="fa fa-comments"></i></span>
+                            <h3>Comments</h3>
+                        </li>
+                        
+                        <li  onclick="show(3)">
+                            <span><i class="fa fa-cog"></i></span>
+                            <h3>Settings</h3>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bt-nav">
+                <ul>
+                    <li class="alert" title="Alert">
+                        <span><i class="fa fa-bell"></i></span>
+                    </li>
+                    <li class="message" title="Message">
+                        <span><i class="fa fa-envelope"></i></span>
+                    </li>
+                    <li class="set" title="settings">
+                        <span><i class="fa fa-cog"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <div class="main">
+            <section class="profile tabs">
+                <h1>Your posts</h1>
+                <div class="userpost">
+                    <div class="posts">
+                        <span><i class="fa fa-plus"></i></span>
+                    </div>
+                    <div class="posts">
+                        <img width="200" src="toss.jpg" alt="">
+                        <p>Title or Name</p>
+                    </div>
+                    <div class="posts">
+                        <img width="200" src="ballot.jpg" alt="">
+                        <p>Title or Name</p>
+                    </div>
+                    <div class="posts">
+                        <img width="200" src="orange.jpg" alt="">
+                        <p>Title or Name</p>
+                    </div>
+                    <div class="posts">
+                        <img width="200" src="random.jpg" alt="">
+                        <p>Title or Name</p>
+                    </div>
+                </div>
+            </section>
+            <section class="tabs">
+                <h1>Reviews</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consectetur eos excepturi, quos doloribus amet. Tempore vero dolorem suscipit neque.</p>
+            </section>
+            <section class="tabs">
+                <h1>Comments</h1>
+                <p class="text">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, in! adipisicing elit. Optio consectetur eos excepturi, quos doloribus amet. Tempore vero dolorem suscipit neque.</p>
+            </section>
+            <section class="tabs" >
+                <h1>Settings</h1>
+                <p class="text">Lorem ipsum consectetur eos, quos doloribus amet. Tempore vero dolorem suscipit neque.</p>
+            </section>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script type = "text/javascript" 
+    src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+ </script>
+   
+ <script type = "text/javascript" 
+    src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+ </script>
+
+    <script>
+        const tbtn = document.querySelectorAll(".side-nav ul li");
+        const tab  = document.querySelectorAll(".tabs");
+        function show(panelIndex) {
+            tab.forEach(function(node){
+                node.style.display = "none";
+            })
+            tab[panelIndex].style.display = "block";
+        }
+        show(0)
+    </script>
+
+    <script>
+        $(".side-nav ul li").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        })
+    </script>
+    <script>
+        const bar = document.querySelector(".bars");
+        const navM = document.querySelector(".nav-mobile");
+        bar.addEventListener("click",  (nav) =>{
+            navM.classList.toggle("show");
+        })
+    </script>
+    <script>
+        const Mbar = document.querySelector(".m-bar");
+        const aside = document.querySelector(".sidebar");
+        const close = document.querySelector(".close");
+        Mbar.addEventListener("click", ()=>{
+            aside.classList.add("show")
+        })
+       close.addEventListener("click", ()=>{
+            aside.classList.remove("show")
+        })
+    </script>
+</body>
+</html>

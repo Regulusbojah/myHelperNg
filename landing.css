@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    height: 100vh;
+    overflow: hidden;
+}
+
+form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -30%);
+    padding: 3rem;
+    border-radius: 15px;
+    background: #fff; 
+    width: 420px;
+    height: 400px;
+    background-color: rgba(216, 208, 151, 0.541);
+}
+input[type=email], input[type=password]{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 15px;
+    background: rgb(29, 102, 86);
+    background: rgb(57, 190, 159);
+    outline: none;
+}
+input[type=submit]{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+    background: rgb(29, 102, 86);
+    transition: width 500ms ease;
+    color: #fff;
+    outline: none;
+}
+input[type=submit]:hover{
+    background: rgba(10, 31, 26, 0.384);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    width:100%;
+}
+
+.header{
+    height: 70vh;
+    background-image:url(newwallpaper.png);
+    /* background: rgb(4, 71, 49); */
+    color: rgb(226, 108, 108);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+
+}
+h1{
+    size: 40;
+    position: relative;
+    top:15%;
+    font-family: cursive;
+}
+h3{
+    position: relative;
+    top:25%;
+    font-family: cursive;
+}
+
+
+form p{
+    text-align: center;
+}
+
+form p::after{
+    display: block;
+    height: 10px;
+    background: black;
+    width: 50px
+}
+
+form p::before{
+    display: block;
+    height: 10px;
+    background: black;
+    width: 50px
+}
+ .sign{
+   
+    height: 40px;
+    border-radius: 15px;
+    width: 200%;
+    margin-bottom: 20px;
+    width: 100%;
+    color: black;
+    background-color: rgb(14, 14, 119);
+
+}
+a{
+    text-decoration: none;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    color:rgb(247, 247, 247);
+    font-family: cursive;
+}
+.none{
+    height: 40px;
+    border-radius: 15px;
+    width: 200%;
+    margin-bottom: 20px;
+    width: 100%;
+    color: black;
+    background-color: rgb(145, 6, 6);
+}
+p a{
+    text-decoration: none;
+    position: relative;
+    left: 15px;
+    top: 2px;
+    color:rgb(0, 0, 0);
+
+}
+input::placeholder{
+    color: #fff;
+    padding: 1rem;
+}
